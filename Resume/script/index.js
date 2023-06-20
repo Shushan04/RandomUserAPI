@@ -36,4 +36,13 @@ closeButton.addEventListener('click', () => {
 });
 
 
+// ---saerch name functional----------------
+const myInput = document.getElementById('myInput');
 
+myInput.addEventListener('input', () => {
+    const filter = document.getElementById('myInput').value.toUpperCase();
+    const rows = document.querySelectorAll('#myTable tbody tr');
+    rows.forEach(row => {
+      row.style.display = row.textContent.toUpperCase().includes(filter) ? '' : 'none';
+    });
+});

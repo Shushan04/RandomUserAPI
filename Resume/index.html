@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./styles/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="myModal" class="modal">
+         Modal content 
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close" id="closeButtonForUserModal">&times;</span>
+            <h2>Modal Header</h2>
+          </div>
+          <div class="modal-body">
+            <p>Some text in the Modal Body</p>
+            <p>Some other text...</p>
+          </div>
+          <div class="modal-footer">
+            <h3>Modal Footer</h3>
+          </div>
+        </div> 
+      
+      </div> 
+
+
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+    <table id="myTable">
+        <thead>
+            <tr class="header">
+                <th style="width:60%;">Name</th>
+                <th style="width:40%;">Country</th>
+            </tr>
+        </thead>
+    
+        <tbody id="usersTableBody">
+
+        </tbody>
+      </table>
+
+      <hr>
+      <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a href="#">1</a>
+        <a class="active" href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+      </div>
+      
+    <script src="./script/index.js" type="module">
+        
+    </script>
+</body>
+</html>
